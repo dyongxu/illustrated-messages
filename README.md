@@ -1,6 +1,6 @@
 # Fiori Moments Illustrations
 
-> See examples at https://pages.github.tools.sap/sap-design-ops/fiori-moments/
+> See examples at https://pages.github.tools.sap/putinfoldername/fiori-moments/
 
 ## Getting started
 All the code required is in the `dist` directory.

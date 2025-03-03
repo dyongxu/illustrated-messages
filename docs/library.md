@@ -1,7 +1,7 @@
 # Illustration Library
 
 ::: tip NOTE
-The code examples here assume the Moments SVG files are included in the page. If the illustrations are referenced externally the `use` `xlink:href` attribute must point to the file. See the [Github README](https://github.tools.sap/sap-design-ops/fiori-moments) for more information.
+The code examples here assume the Moments SVG files are included in the page. If the illustrations are referenced externally the `use` `xlink:href` attribute must point to the file. See the [Github README]([https://github.com/cstallone/illustrated-messages]) for more information.
 :::
 
 ## No Search Results

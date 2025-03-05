@@ -1,12 +1,10 @@
 {
- "name": "illustrated-messages",
-  "version": "1.0.0",
-  "description": "New repository from previously archived version",
+  "name": "fiori-moments",
+  "version": "0.0.1",
+  "description": "> See examples at https://pages.github.tools.sap/sap-design-ops/fiori-moments/",
   "main": "index.js",
-  "scripts": {
-    "docs:build": "vuepress build docs",
-    "docs:dev": "vuepress dev docs",
-    "deploy": "./deploy.sh"
+  "directories": {
+    "doc": "docs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:cstallone/illustrated-messages.git"
+    "url": "https://github.tools.sap/sap-design-ops/fiori-moments.git"
   },
   "author": "",
   "license": "ISC",
@@ -28,6 +26,7 @@
     "bootstrap": "4.3.1",
     "bootstrap-vue": "^2.0.0-rc.28",
     "fiori-fundamentals": "1.6.0",
-    "vue": "^2.6.10"
+    "vue": "^2.7.16",
+    "vue-template-compiler": "^2.7.16"
   }
 }

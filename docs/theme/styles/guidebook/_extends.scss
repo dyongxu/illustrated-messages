@@ -1,0 +1,60 @@
+%boxed {
+	@include shadow;
+	border-radius: $border-radius;
+	border: $border-width solid $border-color;
+	background: white;
+}
+
+%bordered {
+	@include border-radius;
+	border: $border-width solid $border-color;
+}
+%equal {
+	position: relative;
+	// overflow: hidden;
+
+	&::before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: 100%;
+	}
+
+	> * {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: flex;
+	}
+
+	> a {
+		color: inherit;
+
+		&:hover {
+			color: inherit;
+		}
+	}
+
+	&[class*="-short"] {
+		&::before {
+			padding-top: 75%;
+		}
+	}
+
+	&[class*="-long"] {
+		&::before {
+			padding-top: 125%;
+		}
+	}
+}
+
+%highlight {
+	@include transition;
+
+	&:hover {
+		border-color: $primary;
+		color: $primary;
+	}
+}

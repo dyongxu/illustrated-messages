@@ -1,0 +1,88 @@
+@charset 'UTF-8';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./guidebook/fonts/icomoon.eot?pxhbgs');
+  src:  url('./guidebook/fonts/icomoon.eot?pxhbgs#iefix') format('embedded-opentype'),
+    url('./guidebook/fonts/icomoon.ttf?pxhbgs') format('truetype'),
+    url('./guidebook/fonts/icomoon.woff?pxhbgs') format('woff'),
+    url('./guidebook/fonts/icomoon.svg?pxhbgs#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Bootstrap & Variables
+@import "~bootstrap/scss/functions";
+@import "guidebook/variables";
+@import "guidebook/variables-custom";
+@import "~bootstrap/scss/bootstrap";
+
+
+// Components
+@import "guidebook/mixins";
+@import "guidebook/extends";
+@import "guidebook/components/_components";
+@import "guidebook/layout/_layout";
+
+
+@import "~fiori-fundamentals/scss/settings";
+$fd-fonts-path: "~fiori-fundamentals/scss/fonts/";
+@import "~fiori-fundamentals/scss/fonts";
+html,
+body {
+    font-family: $fd-font-family;
+}
+.theme-default-content {
+  h1 {
+    @extend .h2;
+    margin-bottom: 32px;
+  }
+  h2 {
+    @extend .section-title-2;
+    margin-top: 36px;
+    margin-bottom: 24px;
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+  .block-image {
+    margin-bottom: 12px;
+  }
+}
+.navbar-brand {
+  line-height: 50px;
+}
+.nav-link {
+  &:hover {
+    border-color: #adb5bd;
+  }
+  &.router-link-active {
+    color: $link-color;
+    border-color: $link-color;
+  }
+}
+.icon.outbound {
+  transform: translateX(4px);
+}
+.navbar .repo-link {
+  padding: 15px 30px 15px 30px;
+  margin-top: 50px;
+display: flex;
+align-items: center;
+
+  .icon-github {
+    font-size: 2rem;
+  }
+  .badge {
+    text-transform: none;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  .icon.outbound {
+    display: none;
+  }
+}
